@@ -1,41 +1,62 @@
 <!DOCTYPE html 5.0>
 
 <html>
-    <head>
-       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	  <style>5
-			border: 5px solid red; 
-		}
+<head>
+<style>
+.box {
+    width: 33.33333%;
+	height:250px;
+	float:left;
+    position: relative;
+	padding:auto;
+	margin:auto;
 
-		header, footer { 
-			padding: 1em;
-			text-align: center;
-			background-color: black;
-			color: yellow;
-		}
+}
 
-		nav {	
-			float: left;
-			padding: 2em; 
-		}
-	</style>
-	
-	   
-	  <title>   
-	         find the biggest watermelon
-		</title>
-	<p style="font-size:52px; color:hsl(76,53%,50%);">
-	      Where is it? Help me find the murderer!
-	</p>
-	<h1 style="font-size:52px; color:hsl(76,53%,50%);">
-	  Hint: the watermelon shark with a smile
-	</h1>
-	 </head>
-	 <body background="red-2.jpg">
-	 <img src="okay.jpg" alt="Clubhouse" style="width:1000px;height:600px;">
-	 <area shape="rect" coords="250,300,270,350" href="save.jpg">
-     
-   </html>
+.image {
+  opacity: 1;
+  display: block;
+  transition: 1s ease;
+}
+
+.pop {
+  position: absolute;
+  border: 10px solid black;
+  transition: 1s ease-in;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.box:hover .pop {
+  opacity: 1;
+}
+
+.text {
+  background-color: Fuchsia;
+  color: yellow;
+  text-align:center;
+  font-size: 28px;
+}
+
+</style>
+</head>
+
+<body>
+<h1 style="text-align:center; font-size:30px;">Where is he?</h1>
+
+<div class="box">
+  <img src="okay.jpg" alt="Avatar" class="image" style="width:250%;">
+  <div class="pop">
+  <img src="saves.jpg" alt="Avatar" class="image" style="width:100%;">
+    <div class="text">you found him!</div>
+  </div>
+</div>
+</body>
+</html>
+
 <!--<html>
       <body>
 	    <p>
